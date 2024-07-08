@@ -1,5 +1,5 @@
 # print("1.Encrypt file")
-#         print("2.Encrypt file")
+#         print("2.Decrypt file")
 #         menuSelection2 = input("Menu option2: ")
 #         if(menuSelection2=="1"):
 #             print("encrypt")
@@ -9,6 +9,8 @@
 #             print("reselect")
 from frequency_plot import freq_plot
 from affine_cipher import affine
+
+
 exitMenu=0
 filename=""
 while(exitMenu==0):
@@ -29,6 +31,17 @@ while(exitMenu==0):
         affine(filename)
     elif(menuSelection=="3"):
         print("!DES")
+        print("1.Encrypt file")
+        print("2.Decrypt file")
+        menuSelection2 = input("Menu option2: ")
+        if(menuSelection2=="1"):
+            print("encrypt")
+            # des_encrypt()
+        elif(menuSelection2=="2"):
+            print("decrypt")
+            # des_decrypt()
+        else:
+            print("reselect")
     elif(menuSelection=="4"):
         print("!RSA")   
     elif(menuSelection=="0"):

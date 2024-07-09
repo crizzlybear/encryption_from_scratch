@@ -21,7 +21,7 @@ NOTE: p and q need to be larger than 2^64 aka 20 digits
 #=======================================================================
 
 import random
-from binModExp import *
+from .binModExp import *
 
 #-----------------------------------------------------------------------
 #primeTest(int): bool

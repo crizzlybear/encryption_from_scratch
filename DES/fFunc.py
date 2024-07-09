@@ -5,8 +5,8 @@
 3. S box sub in Sbox.py
 4. permutation
 """
-from permute import *
-from sBox import *
+from .permute import *
+from .sBox import *
 #E bit table =======================
 E = [32, 1, 2, 3, 4, 5,
         4, 5, 6, 7, 8, 9,

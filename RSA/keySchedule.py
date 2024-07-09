@@ -6,9 +6,9 @@ PURPOSE: Generate public and private keys and write to file
     (In scenario, BOB generates the keys)
 '''
 #====================================================================
-from primeTest import *
-from extEuclidean import *
-from readfile import *
+from .primeTest import *
+from .extEuclidean import *
+from .readfile import *
 
 #--------------------------------------------------------------------
 #generateKeys():

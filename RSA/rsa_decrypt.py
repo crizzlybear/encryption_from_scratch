@@ -12,10 +12,10 @@ REFERENCE:
     https://www.uobabylon.edu.iq/eprints/paper_1_17152_649.pdf
 '''
 #============================================================================
-from readfile import *
-from binModExp import *
-from toHexa import *
-from blocks import *
+from .readfile import *
+from .binModExp import *
+from .toHexa import *
+from .blocks import *
 #--------------------------------------------------------------------------
 #RSAdecrypt():
     #Purpose: reads ciphertext (assumes exists so it is hardcoded), 
@@ -54,4 +54,4 @@ def RSAdecrypt():
     print("".join(msgBlocks))
         
 #=====main======   
-RSAdecrypt()
+# RSAdecrypt()

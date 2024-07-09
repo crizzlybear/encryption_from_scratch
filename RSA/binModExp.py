@@ -6,7 +6,7 @@ PURPOSE: Perform fast exponential calculations (with or without mod)
     Alternative to pow(n,e,m) n^e mod m
 '''
 #===================================================================
-from toBinary import *
+from .toBinary import *
 #-------------------------------------------------------------------
 #binModExp(int,int,int(optional)):int
     #Purpose: Use instead of pow(n,e,m) = n^e mod m 

@@ -1,7 +1,7 @@
 #keySched
-from toBinary import *
-from toBlocks import *
-from permute import *
+from .toBinary import *
+from .toBlocks import *
+from .permute import *
 #ASK KEY FROM USER
 
 #first permuted choice PC1 table
@@ -36,8 +36,8 @@ def generateSubKeys(inStr):#Input needs to be in binary string of 64 bits, PC1 r
     #bits 8, 16, 24, 32, 40, 48, 58, 64 are removed
     #print("input",inStr)
     #print(len(inStr))
-    if(len(inStr)!=64):
-        print("Error: keySched.py: generateSubKeys() input is not 64 bits in length:", inStr, "len:",len(inStr))
+    if(len(inStr)%64!=0):
+        print("Error: keySched.py: generateSubKeys() input is not in 64 bit blocks:", inStr, "len:",len(inStr))
     kPC1 = permute(inStr, PC1)
     #print("!PC1:", kPC1)
     #print(len(kPC1))

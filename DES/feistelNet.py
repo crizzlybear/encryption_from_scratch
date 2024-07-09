@@ -1,6 +1,6 @@
 #Feistel Network
-from keySched import *
-from fFunc import *
+from .keySched import *
+from .fFunc import *
 #------------------------------------------------------------
 #feistelRound(string, string): string
 #   Purpose: Performs feistel round for the given string and key

@@ -1,6 +1,6 @@
-from toBlocks import *
-from toBinary import *
-from toHexa import *
+from .toBlocks import *
+from .toBinary import *
+from .toHexa import *
 
 ###INITIAL PERMUTATION and FINAL PERMUTATION==========================
 #IP = initial permuation table

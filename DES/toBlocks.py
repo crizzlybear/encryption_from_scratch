@@ -4,8 +4,8 @@ NOTES
 ansi characters 32-126
 """
 import random
-from toBinary import *
-from toHexa import toHex
+from .toBinary import *
+from .toHexa import toHex
 #------------------------------------------------------------
 #n2Pad(string):int
 #   Purpose: Used in paddingR(). Returns number of characters

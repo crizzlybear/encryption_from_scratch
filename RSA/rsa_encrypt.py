@@ -12,11 +12,11 @@ REFERENCE:
     https://www.uobabylon.edu.iq/eprints/paper_1_17152_649.pdf
 '''
 #============================================================================
-from readfile import *
-from binModExp import *
-from toHexa import *
-from blocks import *
-from keySchedule import *
+from .readfile import *
+from .binModExp import *
+from .toHexa import *
+from .blocks import *
+from .keySchedule import *
 
 #---------------------------------------------------------------------------
 #RSAencrypt(string):
@@ -24,8 +24,9 @@ from keySchedule import *
         #Encrypt using c = m^e mod n
         #Write cipher to file (hex blocks separated by space)
 #---------------------------------------------------------------------------
-def RSAencrypt(filename):
-    #f = open(filename)
+def RSAencrypt():
+    filename = input("Enter filename: ")
+    f = open(filename)
     inStr = readToString(filename)#enter messgae to encrypt
     #from public key:
     kPub = readToString("public_key.txt")
@@ -49,12 +50,12 @@ def RSAencrypt(filename):
     cipherBlockStr = " ".join(cipherBlocks)
     writeToFile(cipherBlockStr, "cipher.txt")
     print("Cipher text written: cipher.txt")
-
+    print(cipherBlockStr)
         
 #=====main======   
-try:
-    generateKeys()
-    RSAencrypt("test4.txt")
-except:
-    print("Error generating private and public keys")
+# try:
+#     generateKeys()
+#     RSAencrypt("test4.txt")
+# except:
+#     print("Error generating private and public keys")
 

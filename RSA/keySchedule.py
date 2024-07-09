@@ -45,4 +45,4 @@ def generateKeys():
     writeToFile(Kpr, "private_key.txt")
     print("private_key.txt file created.")
 ###TESTING
-generateKeys()
+# generateKeys()

@@ -16,6 +16,7 @@ from readfile import *
 from binModExp import *
 from toHexa import *
 from blocks import *
+from keySchedule import *
 
 #---------------------------------------------------------------------------
 #RSAencrypt(string):
@@ -51,4 +52,9 @@ def RSAencrypt(filename):
 
         
 #=====main======   
-RSAencrypt("test4.txt")
+try:
+    generateKeys()
+    RSAencrypt("test4.txt")
+except:
+    print("Error generating private and public keys")
+

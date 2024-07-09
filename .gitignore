@@ -1,3 +1,5 @@
 __pycache__
 /RSA/cipher.txt
+/RSA/private_key.txt
+/RSA/public_key.txt
 /DES/desOutput.txt

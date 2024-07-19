@@ -5,36 +5,32 @@ their inner workings
 
 
 <h3>Dependencies</h3>
-Should have the following installed:
-    Python 3.10.12
-    matplotlib 3.9.1 (only for frequency plot)
-    tornado 6.4.1 (only for frequency plot)
+Should have the following installed:<br>
+&nbsp;&nbsp;Python 3.10.12<br>
+&nbsp;&nbsp;Matplotlib 3.9.1 (only for frequency plot)<br>
+&nbsp;&nbsp;Tornado 6.4.1 (only for frequency plot)<br>
 
 
 <h3>HOW TO USE</h3>
-In terminal:
-    python3 program.py
-Then:
-    select from options
-    They will require a filename as input
-    The encryption functions will create an output file, that the decrypt function will decrypt 
+In terminal:<br>
+    <code>python3 program.py</code><br>
+Then:<br>
+<p>&nbsp;&nbsp;Select from options<br>
+&nbsp;&nbsp;They will require a filename as input</p>
+<p><i>Example usage below:</i></p>
 
-<b>1.Frequency Plot</b>
-    Input filename: test1.txt
-<b>2.Affine cipher</b>
-    Input filename: test2.txt
-<b>3.DES</b>
-    Encrypt:
-        Input filename: test3.txt
-        Input key:hello
-        >outputs: desOutput.txt
-    Decrypt:
-        Input:none
-        Output:none
-<b>4.RSA</b>
-    Encrypt:
-        Input: test4.txt
-        >outputs: public_key.txt, private_key.txt, cipher.txt
-    Decrypt:
-        Input:none
-        Output:none
+<b>1.Frequency Plot</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Input filename: <code>test1.txt</code><br>
+<b>2.Affine cipher</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Input filename: <code>test2.txt</code><br>
+<b>3.DES</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Encrypt:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Input filename: <code>test3.txt</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Input key:<code>hello</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Decrypt:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Input: none (uses file/s created by Encrypt function)<br>
+<b>4.RSA</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Encrypt:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Input: <code>test4.txt</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Decrypt:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Input: none (uses file/s created by Encrypt function)<br>
